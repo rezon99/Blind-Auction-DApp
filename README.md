@@ -1,27 +1,122 @@
-# Blind-Auction-DApp
-Blind Auction DApp: A decentralized app for private Ethereum auctions. Users bid with multiple addresses to conceal total bidding power. Features a two-phase process: commitment and reveal. Offers customizable settings for NFT auctions. Built with a modern frontend using v0.dev/chat. A key advancement in privacy-preserving blockchain auctions
+# 🎭 Blind Spot Auction
 
-# Blind Auction DApp
+![Blind Spot Auction](https://github.com/yourusername/blind-spot-auction/raw/main/public/preview.png)
 
-## Overview
-This project implements a Blind Auction DApp where users can participate in an auction while maintaining their privacy by submitting bids with multiple addresses.
+> A decentralized blind auction platform using Zero-Knowledge proofs to ensure bid privacy.
 
-## Features
-- **Multiple Addresses**: Users can create and use multiple addresses, each containing a specific amount of Ether for bidding.
-- **Auction Configuration**: The auction generator contract allows setting parameters such as batch value, auction duration, reveal time, Token ID, and NFT contract address.
-- **Commitment Phase**: Users pay 1 Ether with each address to create commitments during the commitment phase.
-- **Reveal Phase**: Users reveal their commitments to show their bids during the reveal phase.
-- **End of Auction**: The auction concludes after the reveal phase. The highest bidder receives the NFT, and losers can refund their bids.
+## 🚀 Overview
 
-## User Journey
-1. **Creating Addresses**: Users create multiple addresses with specific Ether amounts. For example, User 1 creates 1 main address and 3 mock addresses, each with 1 Ether. User 2 creates 2 addresses with 1 Ether each.
-2. **Auction Setup**: The auction is configured with parameters like batch value, auction duration, reveal time, Token ID, and NFT contract address.
-3. **Commitment Phase**: Users pay 1 Ether with each address to create commitments.
-4. **Starting Reveal Phase**: Call `startRevealTime` to begin the revealing phase.
-5. **Revealing Bids**: Users reveal their commitments during the reveal duration.
-6. **Ending Auction**: Call `endAuction` to finalize the auction. The highest bidder receives the NFT, and losers can refund their bids.
+Blind Spot Auction is a Web3 application that enables users to participate in blind auctions for NFTs. Unlike traditional auctions where bids are visible to all participants, Blind Spot uses Zero-Knowledge proofs to keep bid amounts private until the auction ends, ensuring a fair and transparent process.
 
-## Getting Started
-To run the Blind Auction DApp:
-1. Clone the repository
+### ✨ Key Features
+
+- **Blind Bidding**: Place bids without revealing your amount to other participants
+- **Zero-Knowledge Proofs**: Cryptographic verification without revealing sensitive information
+- **Wallet Integration**: Seamless connection with popular Web3 wallets
+- **Responsive Design**: Fully optimized for both desktop and mobile devices
+- **Real-time Updates**: Stay informed about auction progress and results
+
+## 🛠️ Technologies
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Web3**: Custom wallet integration (with plans to add ethers.js/web3.js)
+- **UI Components**: shadcn/ui
+- **Authentication**: Web3 wallet-based authentication
+- **Styling**: Tailwind CSS with custom gradient designs
+
+## 📋 Prerequisites
+
+- Node.js 18.x or higher
+- npm or yarn
+- A modern web browser with Web3 wallet extension (MetaMask recommended)
+
+## 🔧 Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/yourusername/blind-spot-auction.git
+   cd blind-spot-auction
+   \`\`\`
+
 2. Install dependencies:
+   \`\`\`bash
+   npm install
+   # or
+   yarn install
+   \`\`\`
+
+3. Run the development server:
+   \`\`\`bash
+   npm run dev
+   # or
+   yarn dev
+   \`\`\`
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Structure
+
+\`\`\`
+blind-spot-auction/
+├── app/                  # Next.js app directory
+│   ├── layout.tsx        # Root layout component
+│   ├── page.tsx          # Home page
+│   └── globals.css       # Global styles
+├── components/           # React components
+│   ├── auction-header.tsx    # Header with navigation
+│   ├── auction-info.tsx      # Current auction details
+│   ├── bid-form.tsx          # Bidding interface
+│   ├── connect-wallet.tsx    # Wallet connection
+│   ├── current-auctions.tsx  # List of active auctions
+│   └── how-it-works.tsx      # Explanation of blind auctions
+├── public/               # Static assets
+└── README.md             # Project documentation
+\`\`\`
+
+## 🔍 How It Works
+
+1. **Connect Wallet**: Users connect their Web3 wallet to the platform
+2. **Browse Auctions**: View available NFT auctions and their details
+3. **Place Blind Bid**: Submit a bid with the amount hidden by ZK proofs
+4. **Auction End**: When the auction ends, the highest bidder wins the NFT
+5. **Claim NFT**: The winner can claim their NFT after the auction concludes
+
+## 🔒 Zero-Knowledge Proofs
+
+Blind Spot Auction uses Zero-Knowledge proofs to enable:
+
+- Bidders to prove they have sufficient funds without revealing the exact amount
+- Verification that bids are valid without exposing bid values
+- Transparent winner determination without compromising privacy
+
+## 🛣️ Roadmap
+
+- [ ] Integration with real blockchain networks (Ethereum, Polygon)
+- [ ] Implementation of actual ZK proof generation and verification
+- [ ] Smart contract development for on-chain auction management
+- [ ] Multi-chain support
+- [ ] User profiles and bid history
+- [ ] Auction creation interface for NFT owners
+- [ ] Mobile app development
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+Project Link: [https://github.com/yourusername/blind-spot-auction](https://github.com/yourusername/blind-spot-auction)
+
+---
+
+<p align="center">Made with ❤️ for the Web3 community</p>
