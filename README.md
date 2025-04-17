@@ -2,7 +2,7 @@
 
 demo https://v0-blind-spot-z62cdk.vercel.app/
 
-> A decentralized blind auction platform using Zero-Knowledge proofs to ensure bid privacy.
+> A decentralized blind auction platform to ensure bid privacy.
 
 ## 🚀 Overview
 
