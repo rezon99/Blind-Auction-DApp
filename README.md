@@ -1,6 +1,6 @@
 # 🎭 Blind Spot Auction
 
-![Blind Spot Auction](https://github.com/yourusername/blind-spot-auction/raw/main/public/preview.png)
+demo https://v0-blind-spot-z62cdk.vercel.app/
 
 > A decentralized blind auction platform using Zero-Knowledge proofs to ensure bid privacy.
 
@@ -72,6 +72,9 @@ blind-spot-auction/
 ├── public/               # Static assets
 └── README.md             # Project documentation
 \`\`\`
+
+## Smart contracts
+reed me https://github.com/rezon99/Blind-Spot-use-ZK-proof-
 
 ## 🔍 How It Works
 
